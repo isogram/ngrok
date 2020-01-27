@@ -5,6 +5,28 @@ status](https://travis-ci.org/inconshreveable/ngrok.svg)](https://travis-ci.org/
 ### ”I want to expose a local server behind a NAT or firewall to the internet.”
 ![](https://ngrok.com/static/img/overview.png)
 
+## Thank you Ngrok
+as the mention below, that ngrok 1.x is no longer developed and we have to move to ngrok 2.x which is you have to pay if you want to use custom domain and another useful features. I'm sorry but for me I don't want to spent my money for service that I'm not often using it and the feature I want to use just *custom domain*, so I don't want changing the URL every I need it. I decided to do self hosted ngrok 1.x in my server for my development only.  
+and for everybody feel same with me, here it is... you can use ngrok custom domain for free for your development projects. I already generated custom certificate for it. Hope it can help your development too.  
+
+How to use:
+1. Clone this repo
+2. Run
+```
+make release-client
+```
+3. Then expose your local port:
+```
+$ ./bin/ngrok -config=./ngrok-config.yml -subdomain="YOUR_CUSTOM_SUB_DOMAIN" "YOUR_LOCAL_PORT"
+```
+4. Done
+
+
+Notes:  
+- Currently not support HTTPS
+
+---
+
 ## What is ngrok?
 ngrok is a reverse proxy that creates a secure tunnel from a public endpoint to a locally running web service.
 ngrok captures and analyzes all traffic over the tunnel for later inspection and replay.
