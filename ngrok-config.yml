@@ -1,0 +1,2 @@
+server_addr: tun.glesky.com:9101
+trust_host_root_certs: false
